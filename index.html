@@ -1,262 +1,69 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kernel & More | Instant Popcorn</title>
+<title>Pluvions Technologies</title>
 
 <style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5e9d8;
-color:#333;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
 }
 
-header{
-background:#d69b2d;
-padding:20px;
-text-align:center;
-color:white;
+header {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-header img{
-width:180px;
-border-radius:50%;
-background:transparent;
-}
-nav{
-margin-top:10px;
+header img {
+    width: 120px;
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
 }
 
-.hero{
-text-align:center;
-padding:60px 20px;
+.tagline {
+    color: #00d4ff;
+    font-size: 18px;
 }
 
-.hero h1{
-font-size:40px;
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.hero p{
-font-size:18px;
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.flavors{
-padding:50px 20px;
-text-align:center;
+h2 {
+    color: #00d4ff;
 }
 
-.flavors h2{
-font-size:32px;
-margin-bottom:40px;
+.product-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-max-width:1100px;
-margin:auto;
+.contact {
+    text-align: center;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.card h3{
-margin:15px 0 5px 0;
-}
-
-.price{
-color:#c94b00;
-font-weight:bold;
-}
-
-.contact{
-background:#fff3df;
-padding:50px;
-text-align:center;
-}
-
-.contact h2{
-margin-bottom:20px;
-}
-
-footer{
-background:#333;
-color:white;
-text-align:center;
-padding:20px;
-}
-.banner{
-width:100%;
-max-height:420px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:30px;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 30px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.whatsapp-btn{
-display:inline-block;
-margin-top:15px;
-background:#25D366;
-color:white;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-header h1{
-font-size:42px;
-letter-spacing:1px;
-margin-top:10px;
-}
-.story{
-background:white;
-padding:60px 20px;
-text-align:center;
-max-width:900px;
-margin:auto;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-margin-top:50px;
-}
-
-.story h2{
-font-size:32px;
-margin-bottom:20px;
-}
-
-.story p{
-font-size:18px;
-line-height:1.6;
-color:#555;
-}
-.tagline{
-font-size:22px;
-margin-top:10px;
-color:#444;
-font-weight:500;
-}
-.instagram{
-text-align:center;
-padding:60px 20px;
-background:#fff3df;
-}
-
-.insta-btn{
-display:inline-block;
-background:#E1306C;
-color:white;
-padding:15px 30px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-margin-top:15px;
-}
-
-.availability{
-text-align:center;
-padding:50px 20px;
-}
-
-.why{
-padding:50px 20px;
-text-align:center;
-background:#fff3df;
-}
-
-.why ul{
-list-style:none;
-padding:0;
-}
-
-.why li{
-margin:10px 0;
-font-weight:bold;
-}
-
-.card:hover{
-transform:translateY(-8px);
-transition:0.3s;
-box-shadow:0 10px 20px rgba(0,0,0,0.15);
-}
-.cheese{
-background:#fff8dc;
-}
-
-.cream{
-background:#eef8e6;
-}
-
-.bbq{
-background:#ffe5e5;
-}
-
-.butter{
-background:#fff3c4;
-}
-
-.tomato{
-background:#ffe0e0;
-}
-.card{
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 25px rgba(0,0,0,0.2);
-}
-
-.card img{
-transition:0.3s;
-}
-
-.card:hover img{
-transform:scale(1.05);
-}
-/* popcorn animation */
-
-.popcorn{
-position:fixed;
-top:-50px;
-font-size:30px;
-animation:fall 6s linear infinite;
-}
-
-@keyframes fall{
-0%{
-transform:translateY(-50px);
-}
-
-100%{
-transform:translateY(100vh);
-}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
 }
 </style>
 
@@ -265,136 +72,52 @@ transform:translateY(100vh);
 <body>
 
 <header>
-<img src="logo.png">
-<h1>Kernel & More</h1>
-
-<nav>
-<a href="#">Home</a>
-<a href="#flavors">Flavors</a>
-<a href="#contact">Contact</a>
-</nav>
-
+    <img src="logo.png" alt="Logo">
+    <h1>Pluvions Technologies</h1>
+    <p class="tagline">The Ultimate Hybrid for Rainy Days</p>
 </header>
 
-<section class="hero">
-
-<img src="banner.png" class="banner">
-
-<h1>Instant Popcorn Snacks</h1>
-<h2 class="tagline">Premium American Corn. Bold Flavours. Made for Every Snack Lover.</h2>
-<p>Delicious gourmet popcorn in exciting flavors. Perfect for movie nights, parties and everyday snacking.</p>
-<p>Customize the flavour to your taste — add more or less seasoning just the way you like it.</p>
-<section class="availability">
-
-<h2>Where to Find Us</h2>
-
-<p>
-Kernel & More popcorn is currently available in select kirana stores.
-More stores coming soon across the city!
-</p>
-
-</section>
-</section>
-<section class="story">
-
-<h2>Our Story</h2>
-
-<p>
-Kernel & More was started by a passionate 20-year-old entrepreneur with a simple goal — to create delicious instant popcorn using premium American corn and high quality oil.
-</p>
-
-<p>
-Every packet is made with carefully selected ingredients to deliver rich flavor, great crunch and consistent quality. Our goal is simple: bring movie-theatre style popcorn experience to every home.
-</p>
-<section class="why">
-
-<h2>Why Choose Kernel & More</h2>
-
-<ul>
-
-<li>Premium American Corn</li>
-
-<li>High Quality Cooking Oil</li>
-
-<li>Customizable Flavour Seasoning</li>
-
-<li>Perfect for Movies, Parties & Everyday Snacking</li>
-
-</ul>
-
-</section>
-</section>
-<section id="flavors" class="flavors">
-
-<h2>Our 5 Amazing Flavors</h2>
-
-<div class="grid">
-
-<div class="card cheese">
-<img src="cheese.png">
-<h3>Ultimate Cheese Burst</h3>
-<p class="price">₹45 / packet</p>
-<p>Loaded with rich cheesy flavour that melts in every bite. Add as much seasoning as you like — mild or extra cheesy, it’s completely up to your taste.</p>
-</div>
-
-<div class="card cream">
-<img src="cream_onion.png">
-<h3>Rich Cream & Onion</h3>
-<p class="price">₹45 / packet</p>
-<p>A smooth blend of creamy richness and onion flavour. Perfectly balanced for a delicious snack you can season according to your own taste preference.</p>
-</div>
-
-<div class="card bbq">
-<img src="bbq.png">
-<h3>Smoky Barbeque</h3>
-<p class="price">₹45 / packet</p>
-<p>A smoky barbeque flavour with a spicy kick. If you love bold and slightly spicy snacks, this flavour brings the perfect punch.</p>
-</div>
-
-<div class="card butter">
-<img src="butter.png">
-<h3>Golden Butter & Salt</h3>
-<p class="price">₹45 / packet</p>
-<p>Classic buttery popcorn with the perfect touch of salt. Simple, comforting and perfect for movie nights — adjust the seasoning just the way you like.</p>
-</div>
-
-<div class="card tomato">
-<img src="tomato.png">
-<h3>Zingy Tomato</h3>
-<p class="price">₹45 / packet</p>
-<p>A tangy tomato flavour with a delicious zing. A fun and vibrant snack that can be seasoned more or less depending on your taste.</p>
-</div>
-
-</div>
-<section class="instagram">
-
-<h2>Follow Us on Instagram</h2>
-
-<p>See new flavours, reactions and popcorn moments on our Instagram.</p>
-
-<a href="https://instagram.com/kernel_more" target="_blank" class="insta-btn">
-Follow @kernel_more
-</a>
-
+<section>
+    <h2>Our Product: AeroDry</h2>
+    <p>A revolutionary umbrella drying system designed for modern indoor safety.</p>
+    <img src="product.png" class="product-img">
 </section>
 
-<section id="contact" class="contact">
+<section>
+    <h2>The Problem</h2>
+    <div class="card">
+        Monsoon rains cause wet umbrellas to drip throughout indoor spaces, transforming lobbies and hallways into slippery, unsafe zones that lead to serious injuries and hospitalizations.
+    </div>
 
-<h2>Contact Us</h2>
+    <h2>The Gap</h2>
+    <div class="card">
+        Current solutions—like plastic bags or simple umbrella stands—are either environmentally wasteful or leave umbrellas soaking wet, failing to address the root cause of indoor water accumulation and floor safety.
+    </div>
 
-<p><b>Phone:</b> +91 8424020252</p>
-<p><b>Email:</b> kernelmore@gmail.com</p>
-<p><b>Instagram:</b> @kernel_more</p>
+    <h2>The Solution</h2>
+    <div class="card">
+        AeroDry provides a high-speed, contactless drying experience using side-mounted centrifugal blowers and a natural Diatomite stone base to instantly evaporate moisture and absorb runoff.
+    </div>
+</section>
 
+<section>
+    <h2>Impact (SDGs)</h2>
+    <div class="card">SDG 3: Good Health & Well-being</div>
+    <div class="card">SDG 9: Industry, Innovation & Infrastructure</div>
+    <div class="card">SDG 11: Sustainable Cities</div>
+    <div class="card">SDG 12: Responsible Consumption</div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: pluvions_aerodry@gmail.com</p>
+    <p>Phone: 9833008918</p>
+    <p>Location: Mumbai</p>
 </section>
 
 <footer>
-<p>© Kernel & More. All rights reserved.</p>
+    <p>© 2026 Pluvions Technologies</p>
 </footer>
-<div class="popcorn" style="left:10%">🍿</div>
-<div class="popcorn" style="left:30%;animation-delay:2s;">🍿</div>
-<div class="popcorn" style="left:50%;animation-delay:4s;">🍿</div>
-<div class="popcorn" style="left:70%;animation-delay:1s;">🍿</div>
-<div class="popcorn" style="left:90%;animation-delay:3s;">🍿</div>
+
 </body>
 </html>
